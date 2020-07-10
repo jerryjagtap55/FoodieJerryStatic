@@ -51,7 +51,9 @@
     line-height: 24px;
   }
 
-
+.orange{
+  color: #ff6500;
+}
 
   /*---------------------------------------
      GENERAL               
@@ -133,6 +135,8 @@
   }
 
 
+.listing-preview a {
+  position: relative; }
 
   /*---------------------------------------
      BUTTONS               
@@ -155,6 +159,21 @@
        PRE LOADER              
   -----------------------------------------*/
 
+  .detail-btn {
+    background: #ce3232;
+    border-radius: 0;
+    display: block;
+    border: 0;
+    color: #f9f9f9;
+    font-size: inherit;
+    font-weight: normal;
+    padding: 10px 25px;
+    transition: 0.5s 0.2s;
+  }
+
+  .detail-btn:hover {
+    background: #252525;
+  }
 
   /*---------------------------------------
       MENU              
@@ -366,12 +385,29 @@
     background-image: url(../images/slider-image3.jpg);
   }
 
-  .slider .item-second .section-btn {
-    background: #292929;
+  .slider .item-first .section-btn {
+    background: transparent;
+    border: 1px solid #ffffff;
   }
 
-  .slider .item-second .section-btn:hover {
-    background: #ffffff;
+  .slider .item-first .section-btn:hover,
+  .slider .item-first .section-btn:focus {
+    background: #ce3232;
+    border-color: transparent;
+    color: #ffffff;
+  }
+
+
+  .slider .item-second .section-btn {
+    background: transparent;
+    border: 1px solid #ffffff;
+  }
+
+  .slider .item-second .section-btn:hover,
+  .slider .item-second .section-btn:focus {
+    background: #ce3232;
+    border-color: transparent;
+    color: #ffffff;
   }
 
   .slider .item-third .section-btn {
@@ -510,13 +546,13 @@
   }
 
   .menu-thumb img {
-    width: 100%;
+    width: 90%;
     transition: 0.5s;
     padding: 5px 15px 5px 15px;
   }
 
   .menu-thumb:hover img {
-    transform: scale(1.15);
+    transform: scale(1.08);
   }
 
   #menu .menu-thumb {
@@ -537,33 +573,6 @@
     transition: 0.5s 0.2s;
   }
 
-  .menu-info .menu-item {
-    float: left;
-  }
-
-  .menu-info .menu-price {
-    float: right;
-  }
-
-  .menu-info .menu-price span {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: normal;
-    display: block;
-    margin-top: 10px;
-  }
-
-  .menu-thumb .menu-info h3,
-  .menu-thumb .menu-info p,
-  .menu-thumb .menu-info span {
-    transform: translateY(100%);
-    opacity: 0;
-    display: block;
-    transition: 0.5s 0.2s;
-    color: #ffffff;
-    z-index: 2;
-    position: relative;
-  }
 
   .menu-thumb .menu-info h3 {
     margin-top: 0;
@@ -575,13 +584,6 @@
     font-size: 10px;
     font-weight: bold;
     letter-spacing: 1px;
-  }
-
-  .menu-thumb:hover .menu-info h3,
-  .menu-thumb:hover .menu-info p,
-  .menu-thumb:hover .menu-info span {
-    transform: translateY(0px);
-    opacity: 1;
   }
 
   .menu-thumb:hover .menu-info {
