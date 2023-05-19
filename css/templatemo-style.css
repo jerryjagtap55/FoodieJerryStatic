@@ -186,13 +186,13 @@
   }
 
   .custom-navbar .navbar-brand {
-    color: #ff6500;
+    color: #ce3232;
     font-size: 18px;
     font-weight: bold;
   }
 
   .custom-navbar .navbar-brand span {
-    color: #ce3232;
+    color: #575757;
   }
 
   .top-nav-collapse {
@@ -233,7 +233,7 @@
   .custom-navbar .nav li a {
     font-size: 12px;
     font-weight: bold;
-    color: #3870F1;
+    color: #fff;
     padding-right: 22px;
     padding-left: 22px;
     text-transform: uppercase;
